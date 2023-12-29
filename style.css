@@ -1,0 +1,143 @@
+body{
+  margin:0;
+  padding:0;
+  background-color: #dedede;
+}
+.contenedor{
+  position:absolute;
+  top:30%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-family: sans-serif;
+}
+.carta{
+  position:absolute;
+  top:-100px;
+  width:400px;
+  height:550px;
+  border-radius:20px;
+  box-shadow:0px 0px 10px rgba(222,222,222,1);
+  
+}
+img{
+  width: 32px;
+}
+.corazon,
+diamante{
+  color:red;
+  padding-left:em;
+}
+.numero{
+  padding-left:0.2em;
+}
+.pica{
+  padding-left:0em;
+}
+.diamond{
+  padding-left:0.24em;
+}
+.q{
+  padding-left:0.1em;
+}
+.head{
+  display:flex;
+  flex-direction:column;
+  padding: 1em;
+  justify-content:center;
+  font-size: 2em;
+  background-color: #fff;
+  border-radius:20px 20px 0px 0px ;
+
+}
+
+.body{
+  position:relative;
+  font-size: 2em;
+  line-height: 1.5;
+  color:white;
+  display:flex;
+  align-items:center;
+  padding: 1em;
+  flex-direction:column;
+  height:260px;
+  background: rgb(59, 68, 75);
+}
+
+.footer{
+  background-color: #fff;
+  height:130px;
+  border-radius:0px 0px 10px 10px;
+  
+}
+.line1,.line2,.line3,.line4,.line5{
+    position:absolute;
+}
+.line1{
+  top:60px;
+  left:80px;
+}
+.line2{
+  top:100px;
+  left:110px;
+}
+.line3{
+  top:140px;
+   left:110px;
+}
+.line4{
+  top:180px;
+  left:110px;
+}
+.line5{
+  top:240px;
+   left:70px;
+}
+.var{
+  color:rgb(254, 192, 65);
+}
+.valor{
+ color:rgb(42, 164, 183); 
+  
+  
+}
+.propiedad{
+  color:rgb(52, 158, 66);
+  padding-left:0.6em;
+}
+.uno,.dos,.tres,.cuatro,.cinco{
+  transition: 1s ;
+  	transform-origin: center 600px;
+}
+.uno{
+    z-index:5000;
+}
+.dos{
+    z-index:4000;
+}
+.tres{
+  z-index:3000;
+}
+.cuatro{
+    z-index:2000;
+}
+.cinco{
+  z-index:1000;
+}
+.contenedor:hover .uno{
+
+  transform:rotate(20deg);
+}
+.contenedor:hover .dos{
+  transform:translate(-20%,-10%) rotate(10deg);
+}
+.contenedor:hover .tres{
+  transform:translate(-40%,-15%) rotate(-5deg);
+}
+.contenedor:hover .cuatro{
+  transform:translate(-60%,-10%) rotate(-15deg);
+}
+
+.contenedor:hover .cinco{
+
+transform:translate(-80%,-5%) rotate(-30deg);
+}
